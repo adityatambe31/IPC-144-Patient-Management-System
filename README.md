@@ -32,3 +32,8 @@ This project involved developing a **Patient Management System** through a serie
 
 ## 🎯 Conclusion
 This project provided a comprehensive learning experience in C programming, project planning, and iterative development. It allowed me to manage complex data structures effectively and deliver a functional and reliable Patient Management System.
+
+- **Email:** aditya.tambe.professional31@example.com
+- **LinkedIn:** [Aditya Tambe](https://www.linkedin.com/in/adityatambee/)
+
+Thanks for visiting my repository! Let's code and grow together! 🌟
