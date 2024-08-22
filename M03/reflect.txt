@@ -1,0 +1,19 @@
+/*
+*****************************************************************************
+                        Assignment 1 - Milestone 3
+Full Name  : Aditya Mahesh Tambe
+Student ID#: 171969223
+Email      : amtambe@myseneca.ca
+Section    : ZHH
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+*/
+1)I have added four functions that were not specified or provided in the instructions or specs for this Milestone. Two of the functions are user input functions, which are used to accept only valid input from the user, while the other two are utility functions, which are used to sort the viewing of appointments section. Three, of these functions are described below: Function prototype: void sortData(struct Appointment slot[], int n);The sortData() function was written to sort appointment data in the ascendingorder. This function is used by both the viewAllAppointments()and viewAppointmentSchedule() functions to display all upcoming appointments in ascending order based on the date and time struct values. Function prototype: void swapRecords(struct Appointment* a, struct Appointment* b); The swapRecords() function was created to swap the records so that it could be usedto sort data by comparing the largest value. This function is called within the sortData() function when two adjacent records in an array are required. Function prototype: struct Date getValidDate(void); The getValidDate() function was designed to extract a valid date from user input. This function is used to receive proper date input from the user, including the year, month, and day, in the addAppointment() and removeAppointment() functions.
+
+2)The addAppointment() function needs to perform many operations because of all the requirements in its functionality. It used around 100 lines of code by calling existing functions from the Core module as well as two new user input function. Pattern recognition and the use of functions helped to reduce around 100 lines of code. I was able to combine four sections of code into useful functions to help with readability and maintainability. The functions findPatientIndexByPatientNum(), inputIntPositive(), getValidDate(), and getValidTime() are all part of this function. Without the Core module's functions, this may have been a very long function. There was already a function called findPatientIndexByPatientNum() that was used to get the index value if are cord was present. Aside from that, the requirement was to obtain a valid date and time from the user and to display errors in the case of invalid values. So, this sounded like a functionality that would have required 60 - 70 lines of code. This was also used twice in the addAppointment() function. Creating a user input function was absolutely necessary for code readability and maintainability. The getValidDate() function calls two Core module functions for additional inputs and validations: inputIntPositive() and inputIntRange(). These were the logic sections that I was able to consolidate.
+
+3)Milestone 3 is the most difficult of the three milestones because it includes a lot of user input validation as well as functionalities not found in the existing Core and Clinic modules, such as sorting, swapping items, and date and time validation. Initially, I spent time in studying the requirements, user specification of Milestone 3 and the required output to be displayed. This was a somewhat time-consuming task that took about 2 hours. After understanding the requirement, I opted to devote time to each functionality on a daily basis. I began by coding and unit testing the patient and appointment files, which took approximately 1-2 hours.

@@ -1,0 +1,14 @@
+In line number 62 of your output:
+The output should be:
+ERROR: String length must be exactly 6 chars: SENECA
+^
+But your output is: 
+^C
+^
+
+Unmatched character details:
+The character in column 1 is supposed to be:
+  [E] ASCII code(69)
+but you printed
+  [^] ASCII code(94)
+
